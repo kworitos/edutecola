@@ -4,6 +4,23 @@
     box-sizing: border-box;
 }
 
+
+@font-face {
+    font-family: alyssum;
+    src: url(./fontes/Alyssum-Sans.woff);
+  }
+
+  @font-face {
+    font-family: ahsing;
+    src: url(./fontes/Ahsing-Regular.otf);
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: neue;
+    src: url(./fontes/NeueMachina-Ultrabold.otf);
+  }
+
 header{
     background-color:#CFE0C3;    
     height: 75px;
@@ -30,18 +47,18 @@ a:hover {
     width: 100%;
     gap: 30px 100px;
     padding: 16px 100px 16px 23px;
+    
 }
 
 .nav-cabecalho a{
-    font-size: 30px;
-   
+    font-size: 25px;
+   font-family: alyssum;
 }
 
-
-
-.morbus{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.morbus-cab a{
+    font-family:ahsing;
     font-weight: 800;
+    font-size: 40px;
 }
 
 .morbus:hover,
@@ -50,15 +67,16 @@ a:hover {
     transform: scale(1.03);
 }
 
-.conteudo, .atividades, .playlist, .contato{
-    
-    font-family: aly;
-}
+
 
 .titulo-texto{
     padding: 150px 0px 40px 100px;
+    font-family: ahsing;
 }
 
+.p1 h1{
+    font-size: 70px;
+}
 
 .p1{
     display: flex;
@@ -84,7 +102,7 @@ a:hover {
     color: #fff;
     width: 360px;
     height: 210px;
-    font-size: 30px;
+    font-size: 28px;
     font-family: neue;
 }
 
@@ -102,20 +120,20 @@ a:hover {
     background-color: #CFE0C3;
     width: 400px;
     height:60px ;
-    font-size:30px ;
+
     border: none;
 }
 
   input[type="text"] {
     outline: none;
     border: none;  
-  }s
+    font-family: alyssum;
+  }
 
 #pergunta-usuario::placeholder{
-    font-size: 30px;
+    font-size: 20px;
     color: black;
 }
-
 
 .p2,
 .p3,
@@ -127,7 +145,14 @@ a:hover {
 .digestorio{
     color: #538E96;
     text-align: center;
-    font-size: 70px;
+    font-size: 60px;
+    font-family: alyssum;
+}
+
+.botao-corona a, .botao-vsr a, .botao-influenza a,
+.botao-arbovirus a, .botao-herpesvirus a, .botao-enterovirus a{
+    font-family: neue;
+    color: #0B2027;
 }
 
 .geral-2{
@@ -202,6 +227,26 @@ a:hover {
     height: 440px;
 }
 
+.material h2,
+.capsideo h2,
+.lipidio h2,
+.envelope h2{
+    font-family: alyssum;
+    font-size: 35px;
+}
+
+.material p,
+.capsideo p,
+.lipidio p,
+.envelope p{
+    font-family: neue;
+    font-size: 20px;
+}
+
+.material, .capsideo{
+    margin-top: 80px;
+}
+
 .geral-4{
     display: flex;
     justify-content: center;
@@ -247,13 +292,19 @@ a:hover {
 
 .p5 button{
     background-color: #538E96;
-    color: black;
+    color: #0B2027;
     border: none;
     border-radius: 60px;
     width: 270px;
     height: 69px;
-    font-size: 30px;
+    font-size: 25px;
+    font-family: neue;
+}
 
+.p5 h2{
+    font-family: alyssum;
+    font-size: 20px;
+    margin-top: 20px;
 }
 
 .cv,
@@ -309,10 +360,20 @@ a:hover {
 
 .morbus-p6{
     padding:  80px 60px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 800;
+    font-family: ahsing;
+    font-weight: 100;
 }
 
+.morbus-p6 a{
+    font-size: 50px;
+    color: #0B2027;
+}
+
+.botao-atividade button,
+ .botao-curiosidade button{
+    font-family: alyssum;
+    color: #0B2027;
+}
 .p7{
     background-color: #538E96;
     height: 100svh;
@@ -321,15 +382,22 @@ a:hover {
 
 .morbus-p7{
     padding:  80px 60px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: ahsing;
     font-weight: 800;
 }
 
+.morbus-p7 a{
+    font-size: 50px;
+    color: #0B2027;
+}
+
+
 .geral-7 h2{
     color: #CFE0C3;
-    font-size: 80px;
+    font-size: 70px;
     display: flex;
     justify-content: center;
+    font-family: alyssum;
 }
 
 .geral-7 h3{
@@ -359,8 +427,14 @@ a:hover {
 .p8 h1{
     display: flex;
     justify-content: center;
-    font-size: 80px;
+    font-size: 50px;
     padding-top: 50px;
+    font-family: alyssum;
+}
+
+.p8 h2{
+    font-family: alyssum;
+    font-size: 35px;
 }
 
 .geral-8{
@@ -380,8 +454,8 @@ a:hover {
 }
 
 .geral-8 img{
-    height: 74px;
-    width: 74px;
+    height: 80px;
+    width: 80px;
 }
 
 .telefone {
@@ -401,23 +475,26 @@ a:hover {
 .centro {
     display: flex;
     flex-direction: column;
-    justify-content:left;
-    align-items:flex-start;
+    justify-content:center;
+    align-items:center;
     width: fit-content;
     gap: 40px;
+    font-family: alyssum;
 }
 
 .centro h3 {
-    font-size: 70px;
+    font-size: 50px;
 }
 
 .centro p{
-    font-size: 30px;
+    font-size: 20px;
+    color: #0B2027;
 }
 
 .midias {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .midias a img {
     width: 80px;
@@ -441,9 +518,10 @@ a:hover {
     justify-content: center;
     align-items: center;
     padding-inline: 300px;
-    font-size: 50px;
+    font-size: 30px;
     margin-top: 120px;
     text-align: center;
+    font-family: neue;
 }
 
 .p4 .texto-virus  {
@@ -452,10 +530,10 @@ a:hover {
     justify-content: center;
     align-items: center;
     padding-inline: 300px;
-    font-size: 50px;
+    font-size: 30px;
     margin-top: 120px;
     text-align: center;
-
+    font-family: neue;
 }
 
 .cabecalho-textos-virus {
@@ -500,7 +578,7 @@ a:hover {
     left: 500px;
     margin-bottom: 600px;
     z-index: 999;
-    border: 1px solid black;
+    border: 1px solid #538E96;
     padding: 20px;
     background-color: #CFE0C3;
     border-radius: 16px;
@@ -509,10 +587,16 @@ a:hover {
 .popup h3,.popup1 h3, .popup2 h3, .popup3 h3, .popup4 h3, .popup5 h3 {
     display: flex;
     justify-content: center;
+    font-family: alyssum;
+    font-size: 20px;
+    color: #0B2027;
 }
 
 .popup p, .popup1 p, .popup2 p , .popup3 p, .popup4 p, .popup5 p{
     text-align: center;
+    font-family: neue;
+    font-size: 15px;
+    color: #0B2027;
 }
 
 .paravermais {
