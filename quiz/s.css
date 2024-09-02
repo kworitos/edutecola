@@ -6,13 +6,21 @@
     -webkit-font-smoothing: antialiased;
 }
 
- @font-face {
-        font-family: titulo;
-        src: url(./fontes/OPTIMarkberry-Heavy.otf);
-        font-family: texto;
-        src: url(./fontes/Alyssum-Sans.woff)
+@font-face {
+    font-family: alyssum;
+    src: url(../fontes/Alyssum-Sans.woff);
+  }
 
-}
+  @font-face {
+    font-family: ahsing;
+    src: url(../fontes/Ahsing-Regular.otf);
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: neue;
+    src: url(../fontes/NeueMachina-Ultrabold.otf);
+  }
 
 :root{
     --bg-color: #CFE0C3;
@@ -37,7 +45,7 @@
     padding: 100px;
     border-radius: 36px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 600px;
+    max-width: 800px;
     text-align: center;
 }
 
@@ -46,12 +54,13 @@
     top: -50px;
     margin-top: 0;
     font-size: 45px;
-    font-family: titulo;
+    font-family: ahsing;
+
 }
 
 .bvd p {
-    font-size: 13px;
-    font-family: texto;
+    font-size: 15px;
+    font-family: alyssum;
     line-height: 2.0;
 }
 
@@ -62,12 +71,12 @@
     padding: 15px 40px;
     border: none;
     border-radius: 12px;
-    font-size: 14px;
+    font-size: 15px;
     position: relative;
     top: 50px;
     font-weight: bold;
     text-transform: uppercase;
-    
+    font-family: alyssum;
 }
 
 .comecar_quiz:hover {

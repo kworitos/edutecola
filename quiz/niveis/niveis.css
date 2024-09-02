@@ -14,11 +14,20 @@
  }
 
  @font-face {
-    font-family: titulo;
-    src: url(../fontes/OPTIMarkberry-Heavy.otf);
-    font-family: texto;
-    src: url(../fontes/Alyssum-Sans.woff);
- }
+    font-family: alyssum;
+    src: url(../../fontes/Alyssum-Sans.woff);
+  }
+
+  @font-face {
+    font-family: ahsing;
+    src: url(../../fontes/Ahsing-Regular.otf);
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: neue;
+    src: url(../../fontes/NeueMachina-Ultrabold.otf);
+  }
 
  body {
     font-family: Arial, sans-serif;
@@ -36,7 +45,7 @@
     padding: 100px;
     border-radius: 36px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 600px;
+    max-width: 800px;
     text-align: center;
 }
 
@@ -44,13 +53,15 @@
     position: relative;
     top: -50px;
     margin-top: 0;
-    font-size: 24px;
+    font-size: 45px;
+    font-family: ahsing;
 }
 
 .nvs p {
-    font-size: 13px;
+    font-size: 15px;
     font-family: texto;
     line-height: 2.0;
+    font-family: alyssum;
 }
 
 .b_facil, .b_medio, .b_dificil{
@@ -65,6 +76,7 @@
     font-weight: bold;
     display: inline-block;
     text-transform: uppercase;
+    font-family: alyssum;
 }
 
 .botoes{
