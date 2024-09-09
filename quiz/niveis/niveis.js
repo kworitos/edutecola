@@ -10,9 +10,9 @@ function selecionarAssunto (evento) {
     window.location.href = "./perguntas/perguntas.html"
 }
 
-const botaoFacil = document.querySelector("b_facil")
-const botaoMedio = document.querySelector("b_medio")
-const botaoDificl = document.querySelector("b_dificil")
+const botaoFacil = document.querySelector(".b_facil")
+const botaoMedio = document.querySelector(".b_medio")
+const botaoDificl = document.querySelector(".b_dificil")
 
 botaoFacil.addEventListener("click", function() {
     localStorage.setItem("nivel", 0);

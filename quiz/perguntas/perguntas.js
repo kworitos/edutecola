@@ -1,7 +1,7 @@
 import { data } from "../dadosniveis/data.js";
 let nivel = localStorage.getItem("nivel")
-
-let quiz = data.quizzes[0];
+console.log(nivel)
+let quiz = data.quizzes[nivel];
 let pontos = 0;
 let pergunta = 1;
 let resposta = "";
@@ -53,12 +53,14 @@ function validarResposta() {
     if (resposta === respostaCerta) {
         document.querySelector(`label[for='${idInputResposta}']`).setAttribute("id", "correta");
         pontos += 1;
+        
     } else {
         document.querySelector(`label[for='${idInputResposta}']`).setAttribute("id", "errada");
         respostaCorretaId = questao.respostas.findIndex(r => r === respostaCerta);
         document.querySelector(`label[for='alternativa_${respostaCorretaId}']`).setAttribute("id", "correta");
     }
 
+    console.log(pontos)
     document.querySelectorAll(".alternativas input").forEach(input => {
         input.disabled = true;
     });
@@ -67,7 +69,8 @@ function validarResposta() {
         botaoEnviar.innerText = pergunta === quiz.questões.length ? "Finalizar" : "Próxima";
         botaoEnviar.removeEventListener("click", validarResposta);
         botaoEnviar.addEventListener("click", pergunta === quiz.questões.length ? finalizar : proximaPergunta);
-    }, 1000);
+    }, 0);
+    
 } 
 
 function finalizar() {
