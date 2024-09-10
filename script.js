@@ -234,3 +234,13 @@ corpoSalmonellaImg.addEventListener("mouseout", function(event) {
 })
 
 
+const botaoConteudo = document.querySelector(".botao-conteudo")
+const caixaConteudo = document.querySelector(".caixa-conteudo")
+
+botaoConteudo.addEventListener("click", function() {
+    caixaConteudo.style.display = "grid"
+})
+
+botaoConteudo.addEventListener("dblclick", function() {
+    caixaConteudo.style.display = "none"
+})

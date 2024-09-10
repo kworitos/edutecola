@@ -282,7 +282,7 @@ export const data = {
                 "Arbovírus",
                 "Coronavirus"
             ],
-            "certa": " Arbovírus" 
+            "certa": "Arbovírus" 
         },
         {
             "pergunta": "Qual é a principal forma de prevenção para infecções por enterovírus?",
@@ -302,7 +302,7 @@ export const data = {
                 "Herpes genital",
                 " Catapora"
             ],
-            "certa": "neumonia grave" 
+            "certa": "Pneumonia grave" 
         },
         {
             "pergunta": "Qual é uma característica única dos arbovírus em comparação com outros vírus?",

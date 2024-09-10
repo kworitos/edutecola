@@ -50,6 +50,34 @@ a:hover {
     
 }
 
+
+.caixa-conteudo {
+    position: absolute;
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    background-color: white;
+    border-radius: 16px;
+    gap: 6px;
+    left: 320px;
+    top: 100px;
+}
+
+.caixa-conteudo button {
+    border: none;
+    background-color: #0B2027;
+    color: white;
+    padding: 20px 10px;
+    border-radius: 16px;
+}
+
+.caixa-conteudo button:hover {
+    background-color: #538E96;
+    transition: 0.6s;
+    cursor: pointer;
+    padding: 22px 10px;
+}
+
 .nav-cabecalho a{
     font-size: 25px;
    font-family: alyssum;
