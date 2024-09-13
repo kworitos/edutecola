@@ -61,6 +61,7 @@ a:hover {
     gap: 6px;
     left: 320px;
     top: 100px;
+
 }
 
 .caixa-conteudo button {
@@ -69,6 +70,8 @@ a:hover {
     color: white;
     padding: 20px 10px;
     border-radius: 16px;
+    font-family: alyssum;
+
 }
 
 .caixa-conteudo button:hover {
