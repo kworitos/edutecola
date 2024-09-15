@@ -71,7 +71,7 @@ a:hover {
     padding: 20px 10px;
     border-radius: 16px;
     font-family: alyssum;
-
+    width: 100%;
 }
 
 .caixa-conteudo button:hover {
